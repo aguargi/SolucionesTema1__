@@ -109,7 +109,18 @@ dim(conjunto_datos)        # Número de filas y número de columnas
 rownames(conjunto_datos)
 colnames(conjunto_datos)
 
+# ANIMALS2
+# b. Mostramos las características del conjunto 'Animals2'.
+conjunto_datos_2 <- robustbase::Animals2
+dim(conjunto_datos_2)        
+head(conjunto_datos_2, n=3)  
+tail(conjunto_datos_2)       
+str(conjunto_datos_2)
+dim(conjunto_datos_2)
 
+# c. Nombres de las filas y las columnas
+rownames(conjunto_datos_2)
+colnames(conjunto_datos_2)
 ```
 
 d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los aminales que aparezcan en ambos conjuntos
