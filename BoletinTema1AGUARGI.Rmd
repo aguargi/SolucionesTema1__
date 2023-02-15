@@ -189,38 +189,26 @@ libReturn[['results']][ , 'Package']
     d.  Utiliza la función **summary**, sobre **cabbages** y **Chile** y observa como, además de otros estadísticos, también devuelve el número de valores perdidos de cada variable.
 
 ```{r}
+# Conjunto 'CABBAGES'
+# a. Determinamos las primeras etapas en el análisis:
+dim(cabbages)
+str(cabbages)
+head(cabbages)
+tail(cabbages)
+glimpse(cabbages)
+summary(cabbages)
 
+# b. Determinamos el número de valores perdidos.
+any(is.na(cabbages)) # No se ha encontrado ningún valor perdido.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  # Determinamos el número de valores perdidos para cada variable.
+  sapply(cabbages, is.na) # No se ha encontrado ningún valor perdido.
 ```
 
 5.  Muchas pruebas estadísticas suponen que los datos siguen una distribución Gaussiana. Utiliza la aproximación visual proporcionada por **qqPlot** para determinar si podemos asumir que las variables **HeadWt** y **VitC** del conjunto **cabbages** verifican esta condición.
 
 ```{r}
+
 
 
 
