@@ -202,7 +202,28 @@ summary(cabbages)
 any(is.na(cabbages)) # No se ha encontrado ningún valor perdido.
 
   # Determinamos el número de valores perdidos para cada variable.
-  sapply(cabbages, is.na) # No se ha encontrado ningún valor perdido.
+  sapply(cabbages, is.na) 
+  sum(is.na(cabbages)) # No se ha encontrado ningún valor perdido.
+  
+# Conjunto 'CHILE'
+# a. Determinamos las primeras etapas en el análisis:
+dim(Chile)
+str(Chile)
+head(Chile)
+tail(Chile)
+glimpse(Chile)
+summary(Chile)
+
+# b. Determinamos el número de valores perdidos.
+any(is.na(Chile)) # Sí se ha encontrado valores perdidos.
+
+  # Determinamos el número de valores perdidos para cada variable.
+  sapply(Chile, is.na) 
+  sum(is.na(Chile)) # Se han encontrado 295 valores perdidos.
+  
+# Utilizamos la función 'summary' en ambos conjuntos.
+summary(cabbages)
+summary(Chile)
 ```
 
 5.  Muchas pruebas estadísticas suponen que los datos siguen una distribución Gaussiana. Utiliza la aproximación visual proporcionada por **qqPlot** para determinar si podemos asumir que las variables **HeadWt** y **VitC** del conjunto **cabbages** verifican esta condición.
