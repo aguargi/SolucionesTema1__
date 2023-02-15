@@ -92,21 +92,22 @@ b.  Usa las funciones **dim, head, tail, str** para una primera visión de los c
 c.  Muestra los nombres de las filas y las columnas (**rownames**, **colnames**)
 
 ```{r}
+# Cargamos las librerías
+library(MASS)
+library(robustbase)
 
+# MAMMALS
+# b. Mostramos las características del conjunto 'mammals'.
+conjunto_datos <- MASS::mammals
+dim(conjunto_datos)        # Dimensión del data frame
+head(conjunto_datos, n=3)  # Muestra los primeros valores
+tail(conjunto_datos)       # Muestra los últimos valores
+str(conjunto_datos)        # Muestra la estructura de los datos
+dim(conjunto_datos)        # Número de filas y número de columnas
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# c. Nombres de las filas y las columnas
+rownames(conjunto_datos)
+colnames(conjunto_datos)
 
 
 ```
