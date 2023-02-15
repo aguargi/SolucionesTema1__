@@ -170,18 +170,16 @@ De las representaciones que obtenemos, podemos observar que ambos presentan un c
     b.  Uno de los elementos de la lista es un matriz de caracteres. Muestra por pantalla los 5 primeros elementos de esta matriz usando la función **head**.
     c.  Determina el número de librerías que tienes instaladas.
 
-    ```{r}
+```{r}
+# Asignamos a 'libReturn' el valor devuelto por la función 'library'
+libReturn <- library()
 
+# Usamos la función head() para mostrar los 5 primeros caracteres.
+head(libReturn$results, n=5)
 
-
-
-
-
-
-
-
-
-    ```
+# Determinamos el número de librerías instaladas
+libReturn[['results']][ , 'Package']
+```
 
 4.  En las transparencias del tema 1 se citan los primeros pasos a seguir cuando se analiza un nuevo conjunto de datos.
 
